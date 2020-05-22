@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Homecraft</string>
+    <string name="open">Open Drawer</string>
+    <string name="close">Close Drawer</string>
+
+    <string-array name="cities">
+        <item>-/-</item>
+        <item>Cairo</item>
+        <item>Mecca</item>
+        <item>Abu Dhabi</item>
+        <item>New York</item>
+        <item>London</item>
+        <item>Paris</item>
+        <item>Berlin</item>
+        <item>Moscow</item>
+        <item>Stockholm</item>
+    </string-array>
+
+    <string-array name="countries">
+        <item>-/-</item>
+        <item>Egypt</item>
+        <item>Saudi Arabia</item>
+        <item>UAE</item>
+        <item>USA</item>
+        <item>UK</item>
+        <item>France</item>
+        <item>Germany</item>
+        <item>Russia</item>
+        <item>Sweden</item>
+    </string-array>
+
+    <string-array name="methods">
+        <item>-/-</item>
+        <item>Postal Shipping</item>
+        <item>Aerial Shipping</item>
+        <item>Cruise Shipping</item>
+    </string-array>
+</resources>

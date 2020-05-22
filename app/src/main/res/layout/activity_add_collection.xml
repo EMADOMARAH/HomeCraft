@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    tools:context=".AddCollectionActivity"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/container_add_collection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+
+            <ImageView
+                android:id="@+id/image_add_collection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="center"
+                android:src="@drawable/ic_logo"
+                android:tint="@android:color/black"
+                tools:ignore="ContentDescription"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/image_add_collection"
+                android:orientation="vertical"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/name_add_collection"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Collection Name"
+                        android:inputType="textNoSuggestions"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText"
+                        />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <EditText
+                    android:id="@+id/desc_add_collection"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/bg_border"
+                    android:gravity="top"
+                    android:hint="Description"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:maxWidth="300dp"
+                    android:padding="16dp"
+                    android:textSize="14sp"
+                    tools:ignore="Autofill,HardcodedText"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="64dp"
+                    app:cardBackgroundColor="@color/colorAccent"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="10dp"
+                    >
+
+                    <com.balysv.materialripple.MaterialRippleLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:mrl_rippleColor="@android:color/white"
+                        app:mrl_rippleDuration="500"
+                        app:mrl_rippleOverlay="true"
+                        >
+
+                        <Button
+                            android:id="@+id/add_add_collection"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:text="Add collection"
+                            android:textAllCaps="false"
+                            android:textSize="14sp"
+                            tools:ignore="HardcodedText"
+                            />
+
+                    </com.balysv.materialripple.MaterialRippleLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <ProgressBar
+                    android:id="@+id/progress_add_collection"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:indeterminate="true"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignBottom="@id/image_add_collection"
+                android:layout_centerHorizontal="true"
+                android:translationY="50dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/pic_add_collection"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_image"
+                    tools:ignore="ContentDescription"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_add_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:theme="@style/ToolTheme"
+        />
+
+</RelativeLayout>
